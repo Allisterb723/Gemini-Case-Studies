@@ -13,7 +13,7 @@ Unlike standard generative AI use cases (text/image generation), this portfolio 
 
 ## 🛠️ Case Studies
 
-### 1. [Hardware Architecture & Signal Logic](./hardware-architecture/monitor-signal-logic.md)
+### 1. [Hardware Architecture & Signal Logic](./hardware-architecture/ultrawide-120fps-split.md)
 **The Challenge:** Bypassing OS-level driver locks to force an Ultrawide 120Hz signal through an incompatible active splitter.
 * **Key Technique:** EDID Hex Decoding & Timing Override.
 * **Outcome:** Restored full bandwidth capabilities on Novatek chipsets via custom CRU injection.
