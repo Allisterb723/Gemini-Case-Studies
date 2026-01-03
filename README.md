@@ -27,6 +27,8 @@ Once the verified splitter was installed, the correct resolution and refresh rat
 2.  **The Finding:** Gemini identified a discrepancy: The OS was loading a generic "Acer" driver profile that was being filtered by the splitter. However, the raw hardware identifier revealed a **"Novatek"** controller chip capable of much tighter timing parameters.
 3.  **The Fix:** We bypassed the standard driver logic. We manually configured a **Detailed Timing Block** in CRU, explicitly defining the **Ultrawide resolution** (e.g., 2560x1080 / 3440x1440) combined with the **120Hz vertical total**, using the specific "LCD standard" timings required by the Novatek chip.
 
+<img width="642" height="668" alt="image" src="https://github.com/user-attachments/assets/146882e6-198a-4553-b173-c341a39e8c71" />
+
 ### Outcome
 
 By manually forcing the signal parameters to match the raw hardware capabilities—ignoring the software bottlenecks—we successfully restored the full **Ultrawide resolution at 120Hz**. This validated the hardware architecture and proved that the "incompatible" setup was actually a software configuration error solvable with AI reasoning.
